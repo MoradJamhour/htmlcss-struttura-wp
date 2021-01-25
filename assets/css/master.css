@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*Row style with clearfix and relative margin to cancel out all colums padding*/
+.row{
+  margin: 0 -5px;
+}
+
+.row:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+/*Floating the colums*/
+div[class^="col"]{
+  float: left;
+  padding: 0 5px;
+}
+
+
+.mt1{
+  margin-top: 1em;
+}
+
+.mb1{
+  margin-bottom: 1em;
+}
+
+.col-100{width: 100%;}
+.col-50{width: 50%;}
+.col-25{width: 25%;}
+/*All background colors*/
+.bg-pink{
+  background-color: #E477E6;
+  text-align: center;
+}
+.bg-yellow{
+  background-color: #E1D67A;
+  text-align: center;
+}
+.bg-cyan{
+  background-color: #ABCFE7;
+}
+.bg-lblue{
+  background-color: #0084FF;
+}
+
+.bg-purple{
+  background-color: #8801FE;
+  text-align: center;
+}
